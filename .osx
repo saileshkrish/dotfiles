@@ -27,7 +27,7 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 
 # Disable the “Are you sure you want to open this application?” dialog
-defaults write com.apple.LaunchServices LSQuarantine -bool false
+#defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Display ASCII control characters using caret notation in standard text views
 # Try e.g. `cd /tmp; unidecode "\x{0000}" > cc.txt; open -e cc.txt`
@@ -64,7 +64,7 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerHorizSw
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -int 1
 
 # Disable “natural” (Lion-style) scrolling
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+#defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
@@ -79,13 +79,13 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
 # `Inches`, and `true` with `false`.
-defaults write NSGlobalDomain AppleLanguages -array "en" "nl"
-defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=EUR"
-defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
-defaults write NSGlobalDomain AppleMetricUnits -bool true
+#defaults write NSGlobalDomain AppleLanguages -array "en" "nl"
+#defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=EUR"
+#defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
+#defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 # Disable auto-correct
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+#defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 ###############################################################################
 # Screen                                                                      #
